@@ -48,14 +48,16 @@
   .eyebrow{display:flex;align-items:center;gap:16px;margin-bottom:36px}
   .eyebrow .rule{width:40px;height:1px;background:var(--blue)}
   .eyebrow span:last-child{font-family:var(--mono);font-size:12px;letter-spacing:.28em;color:var(--blue)}
+  .sitename{font-family:var(--serif);font-weight:600;font-size:clamp(17px,2.2vw,24px);letter-spacing:.06em;color:var(--blue);margin-bottom:18px}
   h1{font-family:var(--serif);font-weight:600;font-size:clamp(34px,5.8vw,64px);line-height:1.42;letter-spacing:.02em;margin:0;max-width:19em}
   h1 .accent{color:var(--blue)}
   .lead{margin:40px 0 0;max-width:38em;color:var(--soft);font-size:15.5px}
   .hero-cta{margin-top:56px;display:flex;flex-wrap:wrap;align-items:center;gap:28px}
   .btn{display:inline-block;font-weight:700;font-size:14px;letter-spacing:.1em;color:#fff;background:var(--ink);padding:16px 42px;border-radius:2px;transition:background .2s}
   .btn:hover{background:var(--blue);color:#fff}
-  .name-line{font-family:var(--mono);font-size:13px;color:var(--soft);letter-spacing:.05em}
-  .name-line b{color:var(--ink);font-weight:500}
+  .name-line{font-family:var(--sans);font-size:15px;color:var(--soft);letter-spacing:.05em}
+  .name-line b{font-family:var(--serif);color:var(--ink);font-weight:600;font-size:21px;letter-spacing:.08em}
+  .name-line .deg{font-size:13px}
   @media(max-width:640px){.hero-inner{padding-top:88px;padding-bottom:72px}.hero .orbit{width:440px;right:-160px;margin-top:-220px}}
 
   /* sections */
@@ -161,11 +163,12 @@
     <img class="orbit" src="DIL_mark.png" alt="" aria-hidden="true">
     <div class="wrap hero-inner">
       <div class="eyebrow"><span class="rule"></span><span>SPEECH AI × LLM — 23 YEARS</span></div>
+      <div class="sitename">Decision Intelligence Lab</div>
       <h1>音声AIとLLMの最前線を、<br>研究から事業まで23年。<br><span class="accent">その知見を、貴社の意思決定に。</span></h1>
       <p class="lead">ヒューマノイドの音声処理・音声対話・信号処理から、大規模言語モデル、マルチエージェント、米国でのリアルタイム音声研究まで。研究の最前線と事業の現場、その両方に23年立ち続けてきました。技術の中身を知る者として、課題の分析から、何を導入すべきかの判断まで、一貫して支援します。</p>
       <div class="hero-cta">
         <a href="#contact" class="btn">相談する</a>
-        <div class="name-line">代表 <b>戸上 真人</b> — 博士（工学）</div>
+        <div class="name-line">代表 <b>戸上 真人</b><span class="deg"> — 博士（工学）</span></div>
       </div>
     </div>
   </div>
