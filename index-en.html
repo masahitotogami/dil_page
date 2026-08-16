@@ -119,6 +119,29 @@
   .svc .price small{display:block;font-family:var(--sans);font-size:11.5px;color:var(--soft);margin-top:4px}
   .svc-note{font-size:12.5px;color:var(--soft);margin:24px 0 0}
 
+  /* insights */
+  .post-grid{margin-top:48px;max-width:820px}
+  .post{border:1px solid var(--line);border-top:2px solid var(--blue);background:#fff;padding:36px 34px 28px;display:flex;flex-direction:column;position:relative;transition:box-shadow .2s,border-color .2s}
+  .post:hover{box-shadow:0 12px 32px rgba(1,86,176,.10)}
+  .post:hover h3{color:var(--blue)}
+  .post-type{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--blue);margin-bottom:16px}
+  .post-type .dot{width:6px;height:6px;border-radius:999px;background:var(--blue)}
+  .post h3{font-family:var(--serif);font-size:21px;font-weight:600;line-height:1.55;margin:0 0 14px;transition:color .2s}
+  .post p{font-size:14px;color:var(--soft);margin:0}
+  .post .meta{margin-top:24px;padding-top:16px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--soft)}
+  .post .meta .go{color:var(--blue)}
+  /* video = companion to the post */
+  .post-sub{max-width:820px;display:flex;align-items:center;gap:18px;border:1px solid var(--line);border-top:none;background:var(--chip);padding:18px 30px;transition:background .2s}
+  .post-sub:hover{background:#EAF1FA}
+  .post-sub:hover .ps-title{color:var(--blue)}
+  .post-sub .play{flex:none;width:34px;height:34px;border-radius:999px;background:var(--blue);display:flex;align-items:center;justify-content:center}
+  .post-sub .play::before{content:"";display:block;width:0;height:0;border-left:10px solid #fff;border-top:6px solid transparent;border-bottom:6px solid transparent;margin-left:2px}
+  .post-sub .ps-body{min-width:0;flex:1}
+  .post-sub .ps-kicker{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;color:var(--soft)}
+  .post-sub .ps-title{display:block;font-size:13.5px;color:var(--ink);margin-top:3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;transition:color .2s}
+  .post-sub .ps-go{flex:none;font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--blue)}
+  @media(max-width:640px){.post-sub .ps-title{white-space:normal}}
+
   /* approach */
   .approach h2{margin:0 0 28px}
   .approach p{max-width:44em;color:var(--soft);font-size:15px;margin:0}
@@ -151,6 +174,7 @@
       <a href="#usecases">USE CASES</a>
       <a href="#services">SERVICES</a>
       <a href="#career">CAREER</a>
+      <a href="#insights">INSIGHTS</a>
       <a href="index.html" class="lang" lang="ja" title="日本語版">日本語</a>
       <a href="#contact" class="cta">CONTACT</a>
     </nav>
@@ -337,10 +361,34 @@
   </section>
 
 
+  <!-- INSIGHTS -->
+  <section id="insights">
+    <div class="wrap">
+      <div class="sec-label">05 — INSIGHTS</div>
+      <h2>Writing &amp; talks</h2>
+      <div class="post-grid">
+        <a class="post" href="https://note.com/fine_elk7830/n/n4a7781eee235" target="_blank" rel="noopener">
+          <span class="post-type"><span class="dot"></span>BLOG · FIRST POST</span>
+          <h3>Designing the "field" that lets an agent explore</h3>
+          <p>The key to agent performance is less about making the LLM smarter, and more about designing a "field" where it can run hypothesis-testing loops efficiently — a slightly paradoxical idea: use the LLM without leaning on it entirely. Leave search, aggregation, computation and simulation to existing systems, and let the LLM focus on controlling the exploration — illustrated with a counterfactual shogi review system. (Japanese)</p>
+          <div class="meta"><span>note · 2026.08.17</span><span class="go">READ ↗</span></div>
+        </a>
+      </div>
+      <a class="post-sub" href="https://www.youtube.com/watch?v=wpeNz5aE_xU" target="_blank" rel="noopener">
+        <span class="play" aria-hidden="true"></span>
+        <span class="ps-body">
+          <span class="ps-kicker">DEMO VIDEO FROM THE POST</span>
+          <span class="ps-title">"What if the bishop were here?" — a local AI agent moves the board to explain the best move</span>
+        </span>
+        <span class="ps-go">YouTube ↗</span>
+      </a>
+    </div>
+  </section>
+
   <!-- CONTACT -->
   <div id="contact" class="contact">
     <div class="contact-inner">
-      <div class="sec-label">05 — CONTACT</div>
+      <div class="sec-label">06 — CONTACT</div>
       <h2>Let's talk</h2>
       <p>Your challenge doesn't have to be well-defined yet. Inquiries starting from "we don't know what AI can do for us" are welcome.</p>
       <a class="btn-inv" href="mailto:contact@togami.org?subject=Inquiry%3A%20Decision%20Intelligence%20Lab">EMAIL ME</a>
